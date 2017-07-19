@@ -1,3 +1,5 @@
+require 'rails'
+
 module RailsCategory
   module CategoriesHelper
 
