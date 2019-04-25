@@ -48,3 +48,4 @@ end
 - https://ruby-china.github.io/rails-guides/association_basics.html#self-joins
 - https://stackoverflow.com/questions/22815009/add-a-reference-column-migration-in-rails-4
 - https://ruby-china.org/topics/20322
+- https://blog.lysender.com/2016/10/rails-5-self-join-belongs_to-entity-must-exist-error/
