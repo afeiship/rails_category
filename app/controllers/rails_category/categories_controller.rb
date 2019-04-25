@@ -5,33 +5,33 @@ module RailsCategory
     before_action :find_item, only: [:show, :edit, :update, :destroy]
 
     def index
-      @items = Category.all
+      @categories = Category.tree.to_json
     end
 
     def show
     end
 
     def new
-      @item = Category.new
-      @items = Category.all
+      @category = Category.new
+      @categories = Category.all
     end
 
     def create
-      @item = Category.new allow_params
-      if @item.save
-        redirect_to @item
+      @category = Category.new allow_params
+      if @category.save
+        redirect_to @category
       else
         render :new
       end
     end
 
     def edit
-      @items = Category.all
+      @categories = Category.all
     end
 
     def update
-      if @item.update allow_params
-        redirect_to @item
+      if @category.update allow_params
+        redirect_to @category
       else
         render :edit
       end
@@ -47,7 +47,7 @@ module RailsCategory
     end
 
     def find_item
-      @item = Category.find(params[:id])
+      @category = Category.find(params[:id])
     end
   end
 end
