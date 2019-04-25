@@ -11,7 +11,17 @@
 | parent_id   | string | -      | Category parent id   |
 
 ```shell
-./bin/rails g model Category name:string description:string parent_id:references
+./bin/rails g model Category name:string description:string parent:references
+```
+
+## relationship
+```rb
+# model
+class Category < ApplicationRecord
+  has_many :children, class_name: "Category", foreign_key: "parent_id"
+  belongs_to :parent, class_name: "Category"
+end
+
 ```
 
 
