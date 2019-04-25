@@ -26,22 +26,26 @@ end
 
 ## categories tree
 ```json
-[{
-	"id": 1,
-	"name": "animal",
-	"description": null,
-	"parent_id": 0,
-	"created_at": "2019-04-25T15:28:35.978Z",
-	"updated_at": "2019-04-25T15:28:35.978Z",
-	"children": [{
-		"id": 2,
-		"name": "dog",
-		"description": "Just a dog",
-		"parent_id": 1,
-		"created_at": "2019-04-25T15:33:52.870Z",
-		"updated_at": "2019-04-25T15:33:52.870Z"
-	}]
-}]
+[
+  {
+    "id": 1,
+    "name": "animal",
+    "description": null,
+    "parent_id": 0,
+    "created_at": "2019-04-25T15:28:35.978Z",
+    "updated_at": "2019-04-25T15:28:35.978Z",
+    "children": [
+      {
+        "id": 2,
+        "name": "dog",
+        "description": "Just a dog",
+        "parent_id": 1,
+        "created_at": "2019-04-25T15:33:52.870Z",
+        "updated_at": "2019-04-25T15:33:52.870Z"
+      }
+    ]
+  }
+]
 ```
 
 ## resources
