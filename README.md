@@ -1,16 +1,21 @@
-# RailsCategory
+# rails_category
 > Rails category gem.
 
+## model
+> The users table fileds.
 
-## install:
-```bash
-rails g rails_category:install
+| field       | type   | length | description          |
+| ----------- | ------ | ------ | -------------------- |
+| name        | string | -      | Category name        |
+| description | string | -      | Category description |
+| parent_id   | string | -      | Category parent id   |
+
+```shell
+./bin/rails g model Category name:string description:string parent_id:references
 ```
 
-## resrouces:
-+ http://guides.rubyonrails.org/engines.html#overriding-views
-+ http://doabit.iteye.com/blog/777619
-+ https://stackoverflow.com/questions/8029192/named-routes-in-mounted-rails-engine
-+ https://stackoverflow.com/questions/36610985/overwriting-named-routes-from-a-mounted-engine-packaged-in-a-gem
-+ https://gist.github.com/maxivak/5d428ade54828836e6b6
-+ https://stackoverflow.com/questions/27492155/form-for-and-ledermann-rails-settings
+
+## resources
+- https://ruby-china.github.io/rails-guides/association_basics.html#self-joins
+- https://stackoverflow.com/questions/22815009/add-a-reference-column-migration-in-rails-4
+- https://ruby-china.org/topics/20322

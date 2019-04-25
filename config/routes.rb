@@ -1,7 +1,2 @@
-Rails.application.routes.draw do
-
-  namespace :rails_category do
-    resources :categories
-  end
-
+RailsCategory::Engine.routes.draw do
 end

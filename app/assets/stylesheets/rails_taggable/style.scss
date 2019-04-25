@@ -1,8 +1,0 @@
-$category-item: 12;
-$depth-list: (0, 1, 2, 3, 4);
-
-@each $i in $depth-list {
-  .cate-depth-#{$i} {
-    margin-left: #{$i * $category-item}px;
-  }
-}

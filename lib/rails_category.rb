@@ -1,5 +1,4 @@
-require "rails_category/version"
-require 'rails_category/engine'
+require "rails_category/engine"
 
 module RailsCategory
   # Your code goes here...
